@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Header from "./Components/Header.js"
+import Header from "./Components/Content.js"
+import Header from "./Components/Total.js"
 
 const App = () => {
   const course = 'Half Stack application development'
