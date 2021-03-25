@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Header from "./Components/Header.js"
-import Header from "./Components/Content.js"
-import Header from "./Components/Total.js"
+import Content from "./Components/Content.js"
+import Total from "./Components/Total.js"
+
 
 const App = () => {
   const course = 'Half Stack application development'
@@ -16,15 +17,7 @@ const App = () => {
   return (
     <div>
       <Header course={course}/>
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {exercises3}
-      </p>
+      <Content part1={part1} exercises1={exercises1} part2={part2} exercises2={exercises2} part3={part3} exercises3={exercises3}/>
       <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
     </div>
   )
